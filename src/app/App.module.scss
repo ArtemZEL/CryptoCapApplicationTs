@@ -1,0 +1,12 @@
+@import "styles/normalize";
+@import "styles/vars";
+
+@font-face {
+  font-family: 'IBM Plex Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans');
+}
+
+.app {
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
