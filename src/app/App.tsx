@@ -1,7 +1,11 @@
 import React from 'react';
-
-// import './App.module.scss';
+import './App.module.scss';
+import HeaderMenu from '../components/Header/HeaderMenu';
 function App() {
-  return (<div>Learn React</div>)
+  return (
+    <div>
+      <HeaderMenu />
+    </div>
+  );
 }
 export default App;
