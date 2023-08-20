@@ -1,0 +1,66 @@
+@import "../../app/App.module.scss";
+.table__wrapper {
+  border-radius: 8px;
+  .table {
+    background-color: $gray-200;
+    width: 100%;
+    border-radius: 8px;
+    border-collapse: collapse;
+    text-align: center;
+    .thead {
+      font-size: 12px;
+      text-align: center;
+      color: $cyan;
+      tr {
+        th {
+          overflow-wrap: break-word;
+          padding: 10px 4px 10px 4px;
+          font-weight: 600;
+          border-bottom: 4px solid $gray-400;
+          text-align: right;
+          width: 15.8%;
+          &:last-child {
+            width: 6%;
+            text-align: center;
+          }
+          &:first-child {
+            text-align: left;
+          }
+        }
+        .usersCountTH {
+            &:nth-child(-n+2) {
+              text-align: left;
+            }
+        }
+      }
+    }
+    .tbody {
+      font-size: 14px;
+      color: $cyan;
+      font-weight: 600;
+      .row:last-child {
+        border-bottom: hidden;
+      }
+    }
+    .tbody__loading {
+      .tbody__loading__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+    }
+  }
+  .portfolioTable {
+    min-width: 240px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .table__wrapper {
+    .table {
+      .tbody {
+        font-size: 12px;
+      }
+    }
+  }
+}

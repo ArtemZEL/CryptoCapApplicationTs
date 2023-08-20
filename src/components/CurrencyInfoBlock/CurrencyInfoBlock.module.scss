@@ -1,0 +1,72 @@
+@import "../../app/App.module.scss";
+.currencyInfoBlock {
+  width: 50%;
+  margin-bottom: 14px;
+  table {
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    text-align: start;
+    thead {
+      font-size: 12px;
+      font-weight: bold;
+      height: 30px;
+      color: #b0cb04;
+      background-color: $gray-200;
+      tr {
+        th {
+          border: 1px solid #dedede;
+          padding: 0 4px;
+          text-align: left;
+        }
+      }
+    }
+    tbody {
+      font-size: 14px;
+      font-weight: bold;
+      background-color: rgba(236, 236, 236, 0.12);
+      border: 1px solid #dedede;
+      height: 30px;
+      color: #b0cb04;
+      tr {
+        td {
+          width: 25%;
+          border: 1px solid #dedede;
+          padding: 4px 4px;
+        }
+      }
+    }
+    
+.greenText {
+  color: green;
+}
+
+.redText {
+  color: red;
+}
+
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .currencyInfoBlock {
+    width: 100%;
+    table {
+      tbody {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 330px) {
+  .currencyInfoBlock {
+    table {
+      thead {
+        font-size: 10px;
+      }
+      tbody {
+        font-size: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../app/App.module.scss';
+.modal {
+  z-index: 1;
+  text-align: start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(109, 109, 109, 0.38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .paper {
+    max-width: 90vw;
+    padding: 20px 20px;
+    border-radius: 8px;
+    background-color: $white;
+    position: relative;
+    .paperName {
+      font-size: 16px;
+      font-weight: 600;
+      color: #5c5550;
+      margin-bottom: 20px;
+    }
+  }
+}

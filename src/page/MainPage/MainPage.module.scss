@@ -1,0 +1,16 @@
+@import '../../app/App.module.scss';
+.main {
+  text-align: start;
+  padding: 40px 0;
+  min-height: calc(100vh - 120px);
+  h2 {
+    font-size: $fontSize-lg;
+    font-weight: 600;
+    color:$cyan;
+  }
+}
+
+
+
+
+

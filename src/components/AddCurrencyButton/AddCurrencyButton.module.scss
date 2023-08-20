@@ -1,0 +1,17 @@
+@import "../../app/App.module.scss";
+.addButton {
+  align-items: center;
+  padding: 4px;
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+  width: 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  &:hover {
+    background-color:$gray-100 ;
+  }
+  &:active {
+    background-color:$gray-200 ;
+  }
+}

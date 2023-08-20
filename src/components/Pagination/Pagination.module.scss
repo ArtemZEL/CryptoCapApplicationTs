@@ -1,0 +1,49 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 20px;
+  button {
+    position: relative;
+    background-color: rgba(230, 230, 230, 0.756);
+    border-radius: 6px;
+    border: 0;
+    height: 34px;
+    min-width: 28px;
+    color: #615e5e;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(20, 26, 29, 0.41);
+    }
+    &:active {
+      background-color: rgba(13, 16, 17, 0.41);
+    }
+    &:disabled {
+      cursor: auto;
+      background-color: rgba(94, 87, 87, 0.25);
+
+      &:hover {
+        background-color: rgba(94, 87, 87, 0.25);
+      }
+      &:active {
+        background-color: rgba(94, 87, 87, 0.25);
+      }
+      &::after {
+        content: ' ';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(94, 87, 87, 0.25);
+        border-radius: 6px;
+      }
+    }
+  }
+  .active {
+    background-color: rgba(1, 2, 4, 0.39);
+  }
+
+}

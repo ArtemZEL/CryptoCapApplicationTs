@@ -1,0 +1,14 @@
+.delete {
+  cursor: pointer;
+  color: rgba(255, 0, 115, 0.57);
+  border: none;
+  border-radius: 8px;;
+  background-color: rgba(255, 143, 203, 0.02);
+  &:hover {
+    color: rgb(255, 0, 115);
+    background-color: rgba(255, 143, 203, 0.08);
+  }
+  &:active {
+    color: rgb(255, 0, 115);
+  }
+}

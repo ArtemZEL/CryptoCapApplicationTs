@@ -1,0 +1,16 @@
+@import '../../app/App.module.scss';
+.close {
+  font-weight: bold;
+  color: #111111;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  &:hover {
+    color: $white;
+    background-color:rgba(238, 5, 5, 0.714);
+    border-radius: 5px;
+  }
+}
