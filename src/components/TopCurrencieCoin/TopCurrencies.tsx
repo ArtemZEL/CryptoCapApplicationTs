@@ -30,7 +30,7 @@ function TopCurrencies() {
             onClick={handleOpenTop}
             className={`${style.topCrypto__Item} ${style.topCrypto__Button}`}
           >
-            Топ 3 валюты
+            Топ 3
           </div>
           {openTop && (
             <ModalContainer handleClose={handleCloseTop} nameText={'Toп 3 крипто валюты'}>
