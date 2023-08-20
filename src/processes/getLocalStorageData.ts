@@ -8,7 +8,7 @@ export const getUsersCurrenciesIds = (): Array<number> => {
     ? JSON.parse(localStorageStringifyData)
     : null;
   return localStorageParsedData
-    ? localStorageParsedData.map((c: { id: string; value: number }) => c.id)
+    ? localStorageParsedData.map((coin: { id: string; value: number }) => coin.id)
     : [];
 };
 

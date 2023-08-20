@@ -1,5 +1,6 @@
 import { getUsersCurrencies } from './getLocalStorageData';
 
+//добавление количество и возможность удаление из корзины профиля
 export const addInPortfolio = (id: string, cryptoValue: number) => {
   const oldStorageData = getUsersCurrencies();
   const oldCurrencyData =
